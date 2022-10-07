@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div class="midvh">
-			<h4>Team TENIM</h4>
+			<h3 class="zero">Team TENIM</h3>
 			<h4>coming soon</h4>
 		</div>
 	</div>
@@ -58,13 +58,17 @@ export default {
 
 <style lang="scss" scoped>
 .midvh {
-	height: 90vh;
+	height: 93vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	h4 {
-		font-size: 1.3em;
+		font-size: 1.1em;
+		opacity: 0.7;
+	}
+	h3 {
+		font-size: 1.5em;
 	}
 }
 
