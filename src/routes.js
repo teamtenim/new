@@ -10,49 +10,49 @@ import Page from './views/projects/project.vue'
 
 export const routes = [
 	{ path: '/', component: Home, meta: { title: 'Home' } },
-	{
-		path: '/projects',
-		meta: { title: 'Projects' },
-		component: Projects
-	},
-	{
-		path: '/explore',
-		meta: { title: 'Explore' },
-		component: Explore
-	},
 	// {
-	// 	path: '/notion',
-	// 	meta: { title: 'Notion' },
-	// 	component: Notion
+	// 	path: '/projects',
+	// 	meta: { title: 'Projects' },
+	// 	component: Projects
 	// },
-	{
-		path: '/projects/:proj',
-		redirect: (to) => {
-			return {
-				path: `/p/${to.params.proj}`
-			}
-		}
-	},
-	{
-		path: '/project/:proj',
-		redirect: (to) => {
-			return {
-				path: `/p/${to.params.proj}`
-			}
-		}
-	},
-	{
-		path: '/p',
-		redirect: (to) => {
-			return { path: `/projects` }
-		}
-	},
-	{
-		path: '/project',
-		redirect: (to) => {
-			return { path: `/projects` }
-		}
-	},
-	{ path: '/p/:id', name: 'Page', component: Page },
+	// {
+	// 	path: '/explore',
+	// 	meta: { title: 'Explore' },
+	// 	component: Explore
+	// },
+	// // {
+	// // 	path: '/notion',
+	// // 	meta: { title: 'Notion' },
+	// // 	component: Notion
+	// // },
+	// {
+	// 	path: '/projects/:proj',
+	// 	redirect: (to) => {
+	// 		return {
+	// 			path: `/p/${to.params.proj}`
+	// 		}
+	// 	}
+	// },
+	// {
+	// 	path: '/project/:proj',
+	// 	redirect: (to) => {
+	// 		return {
+	// 			path: `/p/${to.params.proj}`
+	// 		}
+	// 	}
+	// },
+	// {
+	// 	path: '/p',
+	// 	redirect: (to) => {
+	// 		return { path: `/projects` }
+	// 	}
+	// },
+	// {
+	// 	path: '/project',
+	// 	redirect: (to) => {
+	// 		return { path: `/projects` }
+	// 	}
+	// },
+	// { path: '/p/:id', name: 'Page', component: Page },
 	{ path: '/:pathMatch(.*)', component: NotFound, meta: { title: 'notfound' } }
 ]
